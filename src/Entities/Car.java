@@ -76,6 +76,8 @@ public class Car {
     }
 
     @Override
+    //toString retourne une chaine de caractères avec les caracteristiques
+    //de l'objet
     public String toString() {
         return "Car{" +
                 "id=" + id +
