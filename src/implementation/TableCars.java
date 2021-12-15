@@ -16,7 +16,20 @@ public class TableCars implements Icar {
         tabCars=new Car[N];
     }
     @Override
-    public void showCar(int id) {
+    public void showCar(String carNumber) {
+        int i=0;
+        boolean found=false;
+        while(i<tabCars.length&&!found)
+        {
+            if(tabCars[i].getCarNumber().equalsIgnoreCase(carNumber))
+                found = true;
+            else
+                i++;
+        }
+        if(found)
+            System.out.println(tabCars[i]);
+        else
+            System.out.println("Verify the carNum");
 
     }
 
@@ -26,7 +39,7 @@ public class TableCars implements Icar {
     }
 
     @Override
-    public boolean removeCar(int id) {
+    public boolean removeCar(String carNumber) {
         return false;
     }
 

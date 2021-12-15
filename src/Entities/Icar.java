@@ -1,13 +1,11 @@
 package Entities;
 
-import Enumerations.CarConstructor;
-
 import java.util.List;
 
 public interface Icar {
-    void showCar(int id);
+    void showCar(String carNumber);
     boolean addCar(Car c1);
-    boolean removeCar(int id);
+    boolean removeCar(String carNumber);
     void listAllCars();
     List<Car> getCarsByBrand(String brand);
 }
