@@ -88,6 +88,8 @@ public class Main {
             //2-saisir les propriétés de l'instance
             getCar(c1);//appel d'une méthode static dans le main
             cars.addCar(c1);
+            getCar(c1);//appel d'une méthode static dans le main
+            cars.addCar(c1);
             //lister les cars
             cars.listAllCars();
         }while(choice !=3);
